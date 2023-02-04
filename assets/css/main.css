@@ -151,7 +151,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
+		border-bottom: solid 0.2em rgba(255, 255, 255, 0.35);
 		color: inherit;
 		text-decoration: none;
 	}
@@ -173,6 +173,10 @@ input, select, textarea {
 	p {
 		margin: 0 0 2em 0;
 	}
+
+		p.justified {
+			text-align: justify;
+		}
 
 		p.major {
 			margin: 0 0 1.3em 0;
@@ -2256,7 +2260,7 @@ input, select, textarea {
 	.column {
 	  width: 100%;
 	  display: block;
-	  margin-bottom: 20px;
+	  
 	}
   }
 /* Form */
@@ -2605,6 +2609,7 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+		
 	}
 
 		.image img {
@@ -2651,6 +2656,15 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+
+	.imgbox img {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.imgbox img {
+		object-fit: cover;
+	}
 
 /* List */
 
@@ -3253,7 +3267,7 @@ input, select, textarea {
 			@media screen and (max-width: 1680px) {
 
 				.wrapper > .inner {
-					padding: 4em 4em 2em 4em ;
+					padding: 4em 8em 2em 8em ;
 				}
 
 			}
@@ -3269,6 +3283,36 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				.wrapper > .inner {
+					padding: 3em 2em 1em 2em ;
+				}
+
+			}
+
+		.wrapper > .inner-alt {
+			padding: 5em 5em 3em 5em ;
+			max-width: 100%;
+		}
+
+			@media screen and (max-width: 1680px) {
+
+				.wrapper > .inner-alt {
+					padding: 4em 17em 2em 17em ;
+				}
+
+			}
+
+			@media screen and (max-width: 1280px) {
+
+				.wrapper > .inner-alt {
+					padding: 4em 10em 2em 10em ;
+					width: 100%;
+				}
+
+			}
+
+			@media screen and (max-width: 736px) {
+
+				.wrapper > .inner-alt {
 					padding: 3em 2em 1em 2em ;
 				}
 
@@ -3948,3 +3992,18 @@ input, select, textarea {
 			}
 
 		}
+
+/* Responsive Video*/
+.video-responsive{
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+	}
+	.video-responsive iframe{
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
+	}
