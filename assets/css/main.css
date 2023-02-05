@@ -4007,3 +4007,9 @@ input, select, textarea {
 	width:100%;
 	position:absolute;
 	}
+
+/*Figcaption*/
+.centercaption{
+	text-align: center;
+	margin-bottom: 2em;
+}
